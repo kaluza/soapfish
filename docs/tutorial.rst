@@ -7,7 +7,7 @@ Introduction
 ------------
 
 The main purpose of this library is a neat implementation of the SOAP protocol,
-but the `soapfish.xsd` module can used for any XML as it gives a means of
+but the `soapfish.xsd` module can be used for any XML as it gives a means of
 mapping XML to an object. The object description generally is similar to fields
 in the Django ORM - the static fields that define instance fields. The main
 difference would be that type is passed as first parameter, rather than being a
@@ -262,8 +262,8 @@ string `?wsdl` appended will give the current WSDL with XSD embedded.
 Generated code includes methods descriptions, service description, dispatcher
 and Django `urls.py` binding.
 
-`xsd.Method` describes one method for service (that can consist from more than
-one method). Methods give dispatcher informations required for method
+`xsd.Method` describes one method for service (that can consist of more than
+one method). Methods give dispatcher information required for method
 distinction - `soapAction` and `operationName`, and `function` to call on
 incoming SOAP message. For detail field meaning see the documentation string
 for `xsd.Method`.
@@ -321,9 +321,9 @@ For more examples see `examples/client.py`
 
 The build a webservice we need to define few things:
 
- * Classes that would be send via SOAP
- * Schema instance that aggregates all classes with name space etc.
- * Web service functions and all related informations
+ * Classes that would be sent via SOAP
+ * Schema instance that aggregates all classes with name space, etc.
+ * Web service functions and all related information
  * Service instance to put everything together
  * Binding to a URL
 
